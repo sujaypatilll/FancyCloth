@@ -1,0 +1,158 @@
+
+
+body{
+    background-color: #343434;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: max-content;
+    padding:50px;
+    background-color: #343434;
+}
+
+/* --------------- Search Bar ---------------- */
+
+.search-bar-section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+
+}
+.search {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid var(--medium);
+    border-right: none;
+    padding: 8px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .searchTerm:focus{
+    color: #000;
+  }
+  
+  .searchButton {
+    width: 35px;
+    height: inherit;
+    border: 1px solid var(--medium);
+    background: var(--medium);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchButton svg{
+    scale: .6;
+  }
+  
+
+
+/* --------------- Searched Product Lists ---------------- */
+
+.search-product-list{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-product{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+    color: var(--extraLight);
+    box-shadow: 0 -20px 10px -20px #e9f8ee8f inset;
+}
+
+.search-product:hover{
+    cursor: pointer;
+    color: var(--medium);
+}
+
+.search-product-number{
+    font-weight: 500;
+    width: 5%;
+}
+
+.search-product img{
+    width: 18%;
+}
+
+.search-product-desc{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 40%;
+}
+
+.search-product-rating{
+    width: 20%;
+}
+.search-product-price{
+    width: 10%;
+}
+
+/* --------------- Media Queries ---------------- */
+
+@media (max-width:750px) {
+
+    .search-bar{
+        width: 80%;
+    }
+    .search-bar-btn{
+        width: 20%;
+    }
+    .search-product{
+        width: 50%;
+        height: max-content;
+        flex-direction: column;
+        gap: .5rem;
+
+    }
+    .search-product div{
+        width: 100%;
+    }
+    .search-product img{
+        width: 100%;
+    }
+    .search-product-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width:550px) {
+
+    .search-product{
+        width: 100%;
+        height: max-content;
+        min-width: 400px;
+        justify-content: space-between;
+    }
+    
+    
+}
+
+
+  

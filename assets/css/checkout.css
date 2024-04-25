@@ -1,0 +1,172 @@
+
+/* --------------- TO REMOVE THE UP AND DOWN ARROW FROM THE NUMBER INPUT FIELD ---------------- */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+    color: var(--extraLight);
+}
+
+.section-heading{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #131313;
+    font-weight: 800;
+}
+
+.bag-btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 14px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    padding:8px;
+    cursor: pointer;
+    transition: all .7s ease-out;
+}
+
+.bag-btn svg{
+    fill: var(--dark);
+}
+
+.bag-btn:hover{
+    background-color: var(--medium);
+    transition: all .3s ease-out;
+}
+
+.bag-btn svg:hover{
+    fill: var(--dark);
+}
+
+/* --------------- Checkout ---------------- */
+
+.checkout{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    padding: 10px 20px;
+}
+
+.billing-form{
+    width: 60%;
+    padding: 10px 20px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #131313;
+}
+
+form{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form label{
+    display: block;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+form input{
+    width: 70%;
+    padding: 6px 12px;
+    font-size: 1.1rem;
+}
+
+form select{
+    width: 70%;
+    padding: 6px 12px;
+    font-size: 1.1rem;
+}
+
+form textarea{
+    width: 70%;
+    padding: 6px 12px;
+    font-size: 1.1rem;
+}
+
+.purchase-btn{
+    margin-bottom: 15px;
+    width:max-content;
+    padding: 8px 16px;
+    background-color: rgb(34, 69, 244);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.purchase-btn a{
+    color: #f2f2f2;
+}
+
+.purchase-btn:hover{
+    background-color: rgb(3, 30, 167);
+}
+
+
+/* --------------- Order Summary ---------------- */
+
+.checkout-order-summary{
+    width: 40%;
+    height: max-content;
+    padding: 10px;
+    background-color: #131313;
+
+}
+
+.checkout-order-list{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 20px;
+}
+
+.checkout-order-product{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 30% 20%;
+}
+
+.total-amount-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin: 20px 0;
+    padding-right: 35px;
+}
+
+/* --------------- Media Queries ---------------- */
+
+@media (max-width:750px){
+    .checkout{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .billing-form{
+        width: 100%;
+    }
+    .checkout-order-summary{
+        width: 100%;
+    }
+}

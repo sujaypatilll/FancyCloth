@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>CrazyCloth - Payment</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/payement.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="leftBox">
+      <div class="card1">
+        <div class="icon">
+          <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+            <path
+              d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+              stroke="#fff" />
+          </svg>
+        </div>
+        <div class="num">
+          <p id="n1">XXXX</p>
+          <p id="n2">XXXX</p>
+          <p id="n3">XXXX</p>
+          <p id="n4">XXXX</p>
+        </div>
+        <div class="info">
+          <div class="name">
+            <p>CARD HOLDER NAME</p>
+          </div>
+          <div class="expdate">
+            <p>MM/YY</p>
+          </div>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="back-card-num">
+          <p>CVV</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightBox">
+      <form action="./paymentCompelte.html">
+        <label for="name">CARD HOLDER NAME</label>
+        <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+        <label for="cardNumber">CARD NUMBER</label>
+        <input type="number" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 000">
+        <div class="downInput">
+          <div class="outdata">
+            <label for="expMonth">EXP. DATE (MM/YY)</label>
+            <div class="indata">
+              <input type="number" name="expMonth" id="expMonth" maxlength="2" placeholder="MM">
+              <input type="number" name="expYear" id="expYear" maxlength="2" placeholder="YY">
+            </div>
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="number" name="cvv" id="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+        <button><a href="#">Confirm</a></button>
+
+      </form>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --------------- Utilities ---------------- */
+
+.red{
+    box-shadow: 0 0 10px 5px rgb(252, 108, 108);
+}
+
+.green{
+    box-shadow: 0 0 10px 5px rgb(108, 252, 130);
+}
+
+.blue{
+    box-shadow: 0 0 10px 5px rgb(108, 130, 252);
+}
+
+.orange{
+    box-shadow: 0 0 10px 5px rgb(252, 173, 108);
+}
+
+.wrapper{
+    width: 100%;
+    height: max-content;
+    padding:50px;
+}
+
+/* --------------- Contact Options ---------------- */
+
+
+.contact-options{
+    width: 100%;
+    height: max-content;
+}
+
+.options{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option{
+    min-width: 200px;
+    width: 20%;
+    height: 120px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 3em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.option svg{
+    scale: .6;
+}
+
+.option-desc{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* --------------- Contact Form ---------------- */
+
+.contact-us-form{
+    margin-top: 60px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-us-form h2{
+    font-size: 1.8rem;
+}
+
+.contact-us-form form{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 5px #8787878a;
+}
+
+.input-section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-form form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contact-us-form form input{
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 6px 12px;
+}
+
+.contact-us-form form textarea{
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 6px 12px;
+}
+
+.submit-btn{
+    margin-bottom: 15px;
+    width:max-content;
+    padding: 8px 16px;
+    background-color: rgb(34, 69, 244);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: rgb(3, 30, 167);
+}
+
+
+.error{
+   width: 100%;
+   color: red; 
+}
+
+/* --------------- Media Queries ---------------- */
+
+@media (max-width:850px){
+    
+    .wrapper{
+        padding:30px;
+    }
+
+    .contact-us-form form{
+        width: 80%;
+    }
+
+    .options{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+    
+    .option{
+        min-width: 200px;
+        height: 120px;
+        background-color: white;
+        border-radius: 4px;
+        margin: 0 3em;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

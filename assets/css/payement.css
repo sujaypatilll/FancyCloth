@@ -1,0 +1,318 @@
+:root {
+    --primary-color: hsl(278, 68%, 11%);
+    --secondary-color: hsl(270, 3%, 87%);
+    --third-color: hsl(279, 6%, 55%);
+    --fourth-color: hsl(0, 100%, 66%);
+  }
+  
+  /* defaults */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Space Grotesk", sans-serif; */
+  }
+  
+  /* main container  */
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  /* left Box  */
+  .container .leftBox {
+    width: 30%;
+    height: 100%;
+    background: url(../../images/bg-main-desktop.png);
+  }
+  
+  /* right Box  */
+  .container .rightBox {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .rightBox form {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20rem;
+    margin-top: 12rem;
+    margin-right: 8rem; */
+  }
+  
+  form label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: var(--primary-color);
+  }
+  
+  form input {
+    margin-bottom: 1.8rem;
+    width: 20rem;
+    height: 2rem;
+    padding: 0 0.4rem;
+    border: 1px solid hsl(0, 0%, 69%);
+    border-radius: 5px;
+  }
+  
+  form input::placeholder {
+    color: hsl(0, 0%, 69%);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  button {
+    color: white;
+    background-color: var(--primary-color);
+    border-style: none;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .downInput {
+    display: flex;
+    gap: 1.1rem;
+  }
+  
+  .outdata {
+    display: flex;
+    flex-direction: column;
+  }
+  .indata {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .indata input {
+    width: 4.1rem;
+    height: 2rem;
+  }
+  
+  .cvc {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cvc input {
+    width: 10.2rem;
+    height: 2rem;
+  }
+  
+  .icon {
+    width: 30%;
+  }
+  
+  .card1 {
+    width: 18rem;
+    height: 10rem;
+    background: url(../../images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  
+  .card2 {
+    width: 18rem;
+    height: 10rem;
+    background: url(../../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    top: 25%;
+    left: 60%;
+    border-radius: 10px;
+  }
+  
+  .card2 .back-card-num {
+    color: white;
+    position: relative;
+    top: 42.8%;
+    left: 75%;
+  }
+  
+  .num {
+    display: flex;
+    justify-content: start;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    color: white;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  /* media query  */
+  
+  @media screen and (max-width: 990px) {
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* left Box  */
+    .container .leftBox {
+      width: 100%;
+      height: 40%;
+      background: url(../../images/bg-main-desktop.png);
+      background-size: cover;
+    }
+  
+    .icon {
+      width: 30%;
+    }
+  
+    .card1 {
+      width: 18rem;
+      height: 10rem;
+      background: url(../../images/bg-card-front.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      flex-direction: column;
+      position: absolute;
+      top: 13%;
+      left: 12%;
+      border-radius: 10px;
+      padding: 1rem;
+      z-index: 1;
+    }
+  
+    .card2 {
+      width: 18rem;
+      height: 10rem;
+      background: url(../../images/bg-card-back.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: relative;
+      top: 5%;
+      left: 30%;
+      border-radius: 10px;
+    }
+  
+    .card2 .back-card-num {
+      color: white;
+      position: relative;
+      top: 42.8%;
+      left: 75%;
+    }
+  
+    .num {
+      display: flex;
+      justify-content: start;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      color: white;
+    }
+  
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.2rem;
+      color: white;
+      font-size: 0.8rem;
+    }
+  
+    .container .rightBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  
+    .container .rightBox form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    form label {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+      color: var(--primary-color);
+    }
+  
+    form input {
+      margin-bottom: 1.8rem;
+      width: 20rem;
+      height: 2rem;
+      padding: 0 0.4rem;
+      border: 1px solid hsl(0, 0%, 69%);
+      border-radius: 5px;
+    }
+  
+    form input::placeholder {
+      color: hsl(0, 0%, 69%);
+    }
+    form input[type="button"] {
+      color: white;
+      background-color: var(--primary-color);
+      border-style: none;
+      width: 18rem;
+      height: 2.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .downInput {
+      display: flex;
+      gap: 1.1rem;
+    }
+  
+    .outdata {
+      display: flex;
+      flex-direction: column;
+    }
+    .indata {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .indata input {
+      width: 4.1rem;
+      height: 2rem;
+    }
+  
+    .cvc {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .cvc input {
+      width: 10.2rem;
+      height: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+    .container .leftBox .card1 {
+      transform: scale(0.8);
+    }
+    .container .leftBox .card2 {
+      transform: scale(0.8);
+    }
+  }
+  
